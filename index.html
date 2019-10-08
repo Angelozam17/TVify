@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+    <title>TVify</title>
+</head>
+<body class="bg-light">
+    <div class="w-100 overflow-hidden" id="container-js">
+        <header class="py-2 bg-primary w-100 position-fixed" id="header-js" style="z-index: 1000">
+            <h1 class="text-center h2 text-white mb-0 font-weight-bold">TVify</h1>
+        </header>
+
+        <section id="body-js" class="mt-5 pt-3">
+
+            <div class="tv-shows container">
+                <!--FORM-->
+                <form>
+                    <div class="form-row mb-2">
+                        <div class="col-md-6 col-sm-9 ml-auto">
+                            <input type="text" class="form-control" placeholder="Busca tu película favorita"/>
+                        </div>
+                        <div class="col-md-2 col-sm-3 mr-auto">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            
+
+        </section>
+        <footer class="fixed-bottom border-top bg-light" id="footer-js">
+            <p class="text-muted text-center m-0 p-0"><small>TVify by Angelo Zambrano</small></p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
