@@ -24,7 +24,7 @@ $(function(){
     $.ajax({
         url: "http://api.tvmaze.com/shows",
         success: function (shows, textStatus, xhr) {
-
+            $body.find('.spinner').remove();
             shows.forEach(show => {
                 console.log(show);
                 const article = template

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
 
     <!--Styles-->
-    <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
 
     <title>TVify</title>
@@ -21,23 +21,25 @@
         </header>
 
         <section id="body-js" class="mt-5 pt-3">
-
-            <div class="tv-shows container">
-                <!--FORM-->
-                <form>
-                    <div class="form-row mb-2">
-                        <div class="col-md-6 col-sm-9 ml-auto">
-                            <input type="text" class="form-control" placeholder="Busca tu película favorita"/>
-                        </div>
-                        <div class="col-md-2 col-sm-3 mr-auto">
-                            <button type="submit" class="btn btn-outline-primary btn-block">Buscar</button>
-                        </div>
+            <!--FORM-->
+            <form class="container">
+                <div class="form-row mb-2">
+                    <div class="col-md-6 col-sm-9 ml-auto">
+                        <input type="text" class="form-control" placeholder="Busca tu película favorita"/>
                     </div>
-                </form>
-            </div>
-
+                    <div class="col-md-2 col-sm-3 mr-auto">
+                        <button type="submit" class="btn btn-outline-primary btn-block">Buscar</button>
+                    </div>
+                </div>
+            </form>
             
-
+            <div class="tv-shows container">              
+                <div class="text-center mt-5">
+                    <div class="spinner-border spinner" role="status">
+                    <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer class="fixed-bottom border-top bg-light" id="footer-js">
             <p class="text-muted text-center m-0 p-0"><small>TVify by Angelo Zambrano</small></p>
@@ -45,7 +47,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
